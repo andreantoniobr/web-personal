@@ -1,83 +1,172 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projeto de site utilizando HTML e CSS avançado.">
-    <title>Meu Site Pessoal</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Mad Rex Themes" />
+  <meta name="description" content="Personal André Antônio Page in HTML5 e CSS3" />
+  <meta name="keywords"
+    content="André Antônio Developer, Personal page, Game Developer, Fullstack Developer" />
+  <title>André Antônio Personal Page</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Google Fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+  <link href="http://fonts.googleapis.com/css?family=Oswald:300,400" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" id="googlefonts-css"
+    href="http://fonts.googleapis.com/css?family=Lato%3A100%2C300%2C400%2C600%2C700%2C900%7CRaleway%3A900%7CPlayfair+Display%7C%27+rel%3D%27stylesheet%27+type%3D%27text%2Fcss"
+    type="text/css" media="all" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2Cregular%2C500%2C600%2C700%2C800%2C900&#038;subset=latin"
+    type="text/css" media="all" />
 </head>
+
 <body>
-    <!-- Cabeçalho -->
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">Meu Site</h1>
-            <ul class="menu">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Seção Principal -->
-    <main>
-        <section class="hero">
-            <h2>Bem-vindo ao Meu Site</h2>
-            <p>Este é um projeto HTML + CSS para prática.</p>
-            <button class="btn">Saiba Mais</button>
-        </section>
-
-        <!-- Sobre -->
-        <section id="sobre" class="sobre">
-            <h2>Sobre Mim</h2>
-            <p>Sou um desenvolvedor apaixonado por tecnologia e design responsivo.</p>
-            <img src="assets/perfil.jpg" alt="Shiba Inu com expressão surpresa, famoso como o meme Doge.">
-        </section>
-
-        <!-- Projetos -->
-        <section id="projetos" class="projetos">
-            <h2>Meus Projetos</h2>
-            <div class="grid-container">
-                <div class="card">Projeto 1</div>
-                <div class="card">Projeto 2</div>
-                <div class="card">Projeto 3</div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Contato -->
-    <section id="contato" class="contato">
-        <h2>Contato</h2>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-            <button type="submit" class="btn">Enviar</button>
-        </form>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <h4 class="text_uppercase">Portfolio Game Developer</h4>
+      <ul class="menu text_uppercase">
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>  
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="row text_center text_uppercase margin_bottom big_heading_mobile">
+        <h3>Hi, I am André Antônio</h3>
+        <h2>
+          A
+          <span class="typer" id="main" data-words="Game Developer, Fullstack Developer" data-delay="100"
+            data-deleteDelay="1000"></span>
+          <span class="cursor" data-owner="main"></span>
+        </h2>
+      </div>
+      <a class="btn" href="#projects">view my work</a>
+      <a class="btn btn-2" href="#contact">contact me</a>
     </section>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
-    </footer>
-
-    <!-- Plugin VLibras para acessibilidade -->
-    <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
+    <!-- About -->
+    <section id="about-me" class="about-me image-background">
+      <div class="container">
+        <div class="row text_center margin_bottom big_heading_mobile">
+          <h2>About me</h2>
         </div>
+        <div class="row text_center margin_bottom">
+          <div class="image">
+            <img src="assets/images/andre.jfif" alt="André Antônio perfil image" />
+          </div>  
+        </div>
+        <div class="content">
+          <div class="description">
+            <p>
+              Game developer with experience in mobile and PC games. Passionate
+              about games, mathematics and programming. Student at UNIFIP and
+              @gamedevpro.com.br
+            </p>            
+          </div>          
+        </div> 
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects image-background">
+      <div class="container">
+        <div class="row text_center margin_bottom big_heading_mobile">
+          <h2>Projects</h2>
+        </div>     
+        <div class="grid-container big_heading_mobile">
+          <a class="card" href="https://github.com/andreantoniobr/procedural-cave-generation-console" target="_blank">
+            <h3 class="margin_bottom">Cave Generation in Console</h3>
+            <div class="image"><img src="assets/images/projects/cave.jpg" alt="Procedural Cave Generation In Console"></div>
+            <p>This implementation uses the pseudo System.Random to generate values in the range of 0 to 100.</p>
+          </a>
+          <a class="card" href="https://github.com/andreantoniobr/block-puzzle-3d-game-unity" target="_blank">
+            <h3 class="margin_bottom">Block Puzzle 3D Game</h3>
+            <div class="image"><img src="assets/images/projects/BlockPuzzle3DImage.png" alt="Block Puzzle 3D Game in Unity Engine"></div>
+            <p>The main object of the game is to form 3x3 squares, rows or complete columns.</p>
+          </a>
+          <a class="card" href="https://github.com/andreantoniobr/island-procedural-generation-2d-unity" target="_blank">
+            <h3 class="margin_bottom">Island 2D Procedural Generation</h3>
+            <div class="image"><img src="assets/images/projects/Island.png" alt="Island 2D Procedural Generation"></div>
+            <p>A 2D island made in Unity Engine and procedurally generated based on predefined sizes and a provided seed.</p>
+          </a>
+          <a class="card" href="https://github.com/andreantoniobr/run-and-hide-game-unity" target="_blank">
+            <h3 class="margin_bottom">Run and Hide Game</h3>
+            <div class="image"><img src="assets/images/projects/RunAndHide.png" alt="Hyper casual game created in unity and available on the Play Store"></div>
+            <p>The main objective of the game is to paint all the floor tiles without getting caught by enemies.</p>
+          </a>
+          <a class="card" href="https://github.com/andreantoniobr/endless-runner-game-unity" target="_blank">
+            <h3 class="margin_bottom">Endless Runner Game (GameDevPro)</h3>
+            <div class="image"><img src="assets/images/projects/endlessRunner.png" alt="Endless Runner made in Unity for learning basic"></div>
+            <p>A project to apply learning basic concepts of Unity and programming with C#.</p>
+          </a>
+          <a class="card">
+            <h3 class="margin_bottom">Blindfolded</h3>
+            <div class="image"><img src="assets/images/projects/Blindfolded.jpg" alt="Island 2D Procedural Generation"></div>
+            <p>A suspense game made to convey the sensation of having a visual impairment to the player.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="row text_center margin_bottom big_heading_mobile">
+        <h2>Contact</h2>
+      </div>   
+      <div class="row text_center">
+        <form>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Your Name" required />
+    
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Your e-mail" required />
+    
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Start writing message here" required></textarea>
+    
+          <button type="submit" class="btn">Submit Now</button>
+        </form>
+      </div>
     </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>new window.VLibras.Widget();</script>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="copyright text-center">
+          © 2025 André Antônio. All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Plugin VLibras para acessibilidade -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget();
+  </script>
+
+  <!-- ================== js ================ -->
+  <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 </body>
+
 </html>
